@@ -92,10 +92,10 @@ async def handle_silence_main(sec: float):
         state["active_until"] = 0.0
 
 
-#@bot.on_kw_silence()  # Возвращает время с последнего keywords
-#async def handle_kw_silence(sec: float):
-#    if sec >= 5.0:
-#        bot.log.debug(f"[KW Silence] {sec:.1f}s with no keywords")
+# @bot.on_kw_silence()  # Возвращает время с последнего keywords
+# async def handle_kw_silence(sec: float):
+#     if sec >= 5.0:
+#         bot.log.debug(f"[KW Silence] {sec:.1f}s with no keywords")
 
 
 if __name__ == "__main__":
