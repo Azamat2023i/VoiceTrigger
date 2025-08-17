@@ -46,7 +46,7 @@ bot = VoiceTrigger(
     keywords=["Алиса"],  # Не обязательно, может брать автоматически с Filter
     quick_words=["стоп", "назад", "вперед"],  # Не обязательно, может брать автоматически с Filter
     calibration_path=Path("voice_calibration.json"),  # Если не указывать будет пытаться брать из "voice_calibration.json"
-    device=None,  # Девайс
+    device=None,  # Устройство ввода, если не указывать выберет системное
     logger=ColorLogger(level="debug")  # Логгер
 )
 
