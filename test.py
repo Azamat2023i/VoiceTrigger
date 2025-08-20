@@ -68,6 +68,7 @@ if __name__ == "__main__":
     devices = bot.list_input_devices()  # Вывод всех аудио устройств
     bot.log.debug(f"Available input devices: {devices}")
     try:
-        asyncio.run(bot.run(initial_keywords_mode=True))  # Запуск с в начале включенным keywords_mode
+        asyncio.run(bot.run(initial_keywords_mode=True))  # Запуск с вначале включенным keywords_mode
     except KeyboardInterrupt:
+
         bot.log.info("Interrupted by user.")
